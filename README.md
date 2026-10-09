@@ -6,14 +6,11 @@
 
 <img src="https://img.shields.io/badge/REALITY-UNSTABLE-ff1744?style=flat-square&labelColor=080808"/>
 <img src="https://img.shields.io/badge/BUILD-UNPREDICTABLE-00ff9c?style=flat-square&labelColor=080808"/>
-<img src="https://img.shields.io/badge/COFFEE-SEGFAULT-7c4dff?style=flat-square&labelColor=080808"/>
 <img src="https://img.shields.io/badge/STATUS-IT_COMPILES-00e5ff?style=flat-square&labelColor=080808"/>
 
-</div>
+<br/><br/>
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=mayankmw&show_icons=true&hide_border=true&bg_color=080808&title_color=00ff9c&icon_color=ff00ff&text_color=b8c7c2&ring_color=00ff9c&include_all_commits=true" height="165" alt="GitHub statistics"/>
+<img src="https://github-readme-stats.vercel.app/api?username=mayankmw&show_icons=true&hide_border=true&bg_color=080808&title_color=00ff9c&icon_color=ff00ff&text_color=b8c7c2&ring_color=00ff9c" height="165" alt="GitHub statistics"/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mayankmw&layout=compact&hide_border=true&bg_color=080808&title_color=00ff9c&text_color=b8c7c2&langs_count=8" height="165" alt="Most used languages"/>
 
