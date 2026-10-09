@@ -22,6 +22,4 @@
 
 <br/><br/>
 
-<sub>0x00 — NOTHING IS AS SIMPLE AS IT LOOKS.</sub>
-
 </div>
