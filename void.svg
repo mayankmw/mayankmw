@@ -1,0 +1,94 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">PROJECT VOID</title>
+  <desc id="desc">Animated cyberpunk terminal with glitching typography, scanlines and a moving neon grid.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030606"/>
+      <stop offset="55%" stop-color="#101020"/>
+      <stop offset="100%" stop-color="#001b17"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff9c"/>
+      <stop offset="48%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#ff00c8"/>
+    </linearGradient>
+
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#00ff9c" stroke-opacity=".12" stroke-width=".7"/>
+    </pattern>
+
+    <pattern id="scanlines" width="3" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 4H3" stroke="#000" stroke-opacity=".42"/>
+    </pattern>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="screen">
+      <rect width="1200" height="330" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#screen)">
+    <rect width="1200" height="330" fill="url(#bg)"/>
+    <rect width="1200" height="330" fill="url(#grid)"/>
+
+    <g fill="none" stroke="#00ff9c" stroke-width="1" opacity=".4">
+      <path d="M0 240L180 140L320 210L520 80L700 180L920 60L1200 170"/>
+      <path d="M0 270L180 170L320 240L520 110L700 210L920 90L1200 200"/>
+      <path d="M0 300L180 200L320 270L520 140L700 240L920 120L1200 230"/>
+    </g>
+
+    <g fill="#00ff9c">
+      <circle cx="180" cy="140" r="3">
+        <animate attributeName="r" values="2;5;2" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="520" cy="80" r="3">
+        <animate attributeName="opacity" values=".2;1;.2" dur="1.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="920" cy="60" r="3">
+        <animate attributeName="r" values="3;7;3" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g font-family="monospace" font-size="12" fill="#00ff9c" opacity=".85">
+      <text x="30" y="32">VOID_KERNEL // EXPERIMENTAL BUILD</text>
+      <text x="1170" y="32" text-anchor="end">SYS::UNKNOWN</text>
+      <text x="30" y="305">[TRACE] 0x00 0xFF 0x7A 0xDE 0xAD</text>
+      <text x="1170" y="305" text-anchor="end">SIGNAL LOST / SIGNAL FOUND</text>
+    </g>
+
+    <g font-family="monospace" font-weight="900" font-size="88" text-anchor="middle">
+      <text x="602" y="176" fill="#ff00c8" opacity=".7">
+        PROJECT VOID
+        <animate attributeName="x" values="602;608;596;602" dur="3s" repeatCount="indefinite"/>
+      </text>
+      <text x="598" y="176" fill="#00e5ff" opacity=".7">
+        PROJECT VOID
+        <animate attributeName="x" values="598;592;604;598" dur="2.7s" repeatCount="indefinite"/>
+      </text>
+      <text x="600" y="176" fill="#eafff7" filter="url(#glow)">PROJECT VOID</text>
+    </g>
+
+    <g font-family="monospace" font-size="15" text-anchor="middle" fill="#00ff9c">
+      <text x="600" y="211">REALITY IS A LEAKY ABSTRACTION</text>
+      <text x="600" y="238" fill="#9aa6a2">BUILD // BREAK // OBSERVE // REPEAT</text>
+    </g>
+
+    <rect x="0" y="0" width="1200" height="330" fill="url(#scanlines)" pointer-events="none"/>
+
+    <rect x="-220" y="0" width="180" height="330" fill="#00ff9c" opacity=".06" transform="skewX(-18)">
+      <animate attributeName="x" values="-300;1400" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="18" y="18" width="1164" height="294" rx="8" fill="none" stroke="url(#neon)" stroke-opacity=".7"/>
+  </g>
+</svg>
