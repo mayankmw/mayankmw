@@ -11,19 +11,6 @@
 
 </div>
 
-```text
-[00:00:00.001] INIT       reality.sys
-[00:00:00.008] LOAD       questionable_ideas.so
-[00:00:00.013] MOUNT      /dev/curiosity
-[00:00:00.021] WARN       sanity_check() returned NULL
-[00:00:00.034] EXEC       ./something_that_should_not_work
-
-FATAL: universe exceeded expected complexity.
-
-RECOVERY ATTEMPT ....................... FAILED
-RETRYING ............................... INFINITE
-```
-
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=mayankmw&show_icons=true&hide_border=true&bg_color=080808&title_color=00ff9c&icon_color=ff00ff&text_color=b8c7c2&ring_color=00ff9c&include_all_commits=true" height="165" alt="GitHub statistics"/>
